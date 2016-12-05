@@ -25,7 +25,7 @@ SECRET_KEY = 'ike3)vvfm-99zfil0q*(-od08^9yzkpi###x_)v+47sbsn3e_$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['139.224.197.46', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['wyiren.com', '139.224.197.46', 'localhost', '127.0.0.1']
 
 
 # Application definition
