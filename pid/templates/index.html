@@ -1,0 +1,62 @@
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/homepage/anoceanofsky.css" />
+<link rel="icon" type="image/jpg" href="/homepage/xiongbenicon.jpg">
+<title>PID Club</title>
+</head>
+
+<body>
+    <div id="page">
+        <div class="topNaviagationLink"><a href="/homepage/index.html">Home</a></div>
+        <div class="topNaviagationLink"><a href="/homepage/index.html">About</a></div>
+        <div class="topNaviagationLink"><a href="/homepage/index.html">Portfolio</a></div>
+        <div class="topNaviagationLink"><a href="/homepage/index.html">Services</a></div>
+	    <div class="topNaviagationLink"><a href="/homepage/index.html">Contact</a></div>
+	</div>
+    <div id="mainPicture">
+    	<div class="picture">
+        	<div id="headerTitle">PID知识分享</div>
+            <div id="headerSubtext">好玩、有趣的PID知识都在这里...</div>
+        </div>
+    </div>
+        <div class="contentBox">
+    	<div class="innerBox">
+        	<div class="contentTitle">PID调参的实用方法和经验有哪些？</div>
+            <div class="contentText">
+                <p>业界有个整定口诀：<br />
+                参数整定找最佳， 从小到大顺序查。<br />
+                先是比例后积分， 最后再把微分加。<br />
+                曲线振荡很频繁， 比例度盘要放大。<br />
+                曲线漂浮绕大弯， 比例度盘往小扳。<br />
+                曲线偏离回复慢， 积分时间往下降。<br />
+                曲线波动周期长， 积分时间再加长。<br />
+                曲线振荡频率快， 先把微分降下来。<br />
+                动差大来波动慢， 微分时间应加长。<br />
+                理想曲线两个波， 前高后低四比一。<br />
+                一看二调多分析， 调节质量不会低。</p><br />
+        <p>如果感觉上面这段顺口溜信息量太大，请自行百度、谷歌各名词的含义
+            如果感觉“原来调参就这点东西啊！”的童鞋请不要太过自信，实际情况会让你明白“原来这点东西真的不简单呀”</p><br />
+          <p>PID调参一定要注意自己使用的场合和背景，切忌脱离实际。由于控制对象的不同，同一种PID控制方式在不同的场合，调参方式很可能完全不一样。要想调的快，调的准，调的稳，就要下功夫多了解控制对象的内部结构、运作原理，盲人摸象式的盲目调试往往是事倍功半的。</p></div>
+
+        
+        <div class="contentTitle">参考资料</div>
+            <div class="contentText"><p>第一个：楼上所言——《自动控制的故事》/自动控制原理的故事<br />
+我是一口气看完的，虽然很长，但是讲的很有意思，对于一个经常被教科书折磨的孩子来说，看这种故事就像看到课外童话书一样让人兴奋。 </p><br />
+        <p>第二个：由入门到精通吃透PID<br />
+这个也是我看过的较为不错的，讲的很有意思，不像那种老学究的语气看了让人打瞌睡。不过后面的知识需要一定自控基础。</p><br />
+          <p>第三：控制分为很多种，PID控制又分为很多种。虽说调参思想基本上都大同小异，但细分的话一些小技巧还是有差异的，比如说单P、PI、PD、PID控制这些可以根据你获得的极限增益来确定kp，ki，kd的大概值，见——齐格勒。各种控制设备控制场合还还有各种小技巧，见“PID参数整定经典教材”或“PID参数整定教程”，输入类似字眼就会出现一大堆资料。呵呵，这些东西我以前倒是看过不少，里面内容都差不多，题主挑几篇看看领会一下就可以了。另外很多工厂的老师傅有自己整定方法，如果你跟他们关系很好，说不定他们会教你。</p></div>
+        
+        
+        <div class="contentTitle">展望</div>
+          <div class="contentText"><p>另外，还有一些比较高端点的整定方法。宗旨无非是为了让参数的获取更方便，控制更稳定，减小对（人）经验的依赖程度（不过再怎么理论怎么数字化也会有人的经验掺杂其中）。</p><br />
+        <p>1.如果控制对象的模型已经搞出来的话（非线性无模型的话就系统辨识一个），我们可以根据传函零极点图配合响应曲线推算出大概的参数，合适稳定的参数仍需经验试凑。很多时候理论上这个值能用，实际操作中就不第一定能用。</p><br />
+          <p>用AI算法（遗传算法、神经元网络算法）求出最佳参数。</p></div>
+        </div>
+
+    </div>
+        <div id="footer"><p>Copyright 2015 - 2020 Alvin 版权所有 <a href="http://www.miitbeian.gov.cn"><u> 豫ICP备15023666号</u></a> </p><br /><br /></div>
+</body>
+</html>
