@@ -3,7 +3,7 @@
 NAME="pid"                              #Name of the application (*)
 DJANGODIR=/data/www/mysite             # Django project directory (*)
 SOCKFILE=/data/www/run/gunicorn.sock        # we will communicate using this unix socket (*)
-USER=nginx                                        # the user to run as (*)
+USER=root                                        # the user to run as (*)
 GROUP=root                                     # the group to run as (*)
 NUM_WORKERS=1                                     # how many worker processes should Gunicorn spawn (*)
 DJANGO_SETTINGS_MODULE=pid.settings             # which settings file should Django use (*)
