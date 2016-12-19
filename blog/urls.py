@@ -20,6 +20,6 @@ from blog.views import index
 
 urlpatterns = [
     url(r'^$', index, name='home index'),
-    url(r'^polls/', include('polls.urls')),
+    url(r'^article/', include('article.urls')),
     url(r'^admin/', admin.site.urls),
 ]
