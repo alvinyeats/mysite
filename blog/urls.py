@@ -16,10 +16,11 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from article.views import home
+from article.views import home, detail
 
 urlpatterns = [
     url(r'^$', home),
+    url(r'^(?Pd+)/$', detail),
     url(r'^article/', include('article.urls')),
     url(r'^admin/', admin.site.urls),
 ]
