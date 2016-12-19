@@ -7,5 +7,4 @@ from . import views
 urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^(?P<my_args>[0-9]+)/$', views.detail, name='detail'),
-    url(r'^test/$', views.test, name='test'),
 ]
