@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['www.wyiren.com', 'wyiren.com', '139.224.197.46', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'article.apps.ArticleConfig',
+    'article',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
