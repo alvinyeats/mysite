@@ -11,40 +11,41 @@
     <link rel="stylesheet" href="http://picturebag.qiniudn.com/blog.css">
 </head>
 <body>
-<div id="layout" class="pure-g">
-    <div class="sidebar pure-u-1 pure-u-md-1-4">
-        <div class="header">
-            <h1 class="brand-title">Alvin Blog</h1>
-            <h2 class="brand-tagline">技术、生活、分享</h2>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="pure-button" href="https://github.com/alvinyeats">Github</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="pure-button" href="http://weibo.com/234076228">Weibo</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-
-    <div class="content pure-u-1 pure-u-md-3-4">
-        <div>
-            {% block content %}
-            {% endblock %}
-            <div class="footer">
-                <div class="pure-menu pure-menu-horizontal pure-menu-open">
-                    <ul>
-                        <li><a href="http://www.wyiren.com/">About Me</a></li>
-                        <li><a href="https://twitter.com/alvin_yeats">Twitter</a></li>
-                        <li><a href="https://github.com/alvinyeats">GitHub</a></li>
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-md-1-4">
+            <div class="header">
+                <h1 class="brand-title">Alvin Blog</h1>
+                <h2 class="brand-tagline">技术、生活、分享</h2>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="pure-button" href="https://github.com/alvinyeats">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="http://weibo.com/234076228">Weibo</a>
+                        </li>
                     </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="content pure-u-1 pure-u-md-3-4">
+            <div>
+                {% block content %}
+                {% endblock %}
+                <div class="footer">
+                    <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                        <ul>
+                            <li><a href="http://www.wyiren.com/">About Me</a></li>
+                            <li><a href="https://twitter.com/alvin_yeats">Twitter</a></li>
+                            <li><a href="https://github.com/alvinyeats">GitHub</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        <div id="footer"><p>Copyright 2015 - 2020 Alvin 版权所有 <a href="http://www.miitbeian.gov.cn"><u> 豫ICP备15023666号</u></a> </p><br /><br /></div>
+
     </div>
-</div>
-<div id="footer"><p>Copyright 2015 - 2020 Alvin 版权所有 <a href="http://www.miitbeian.gov.cn"><u> 豫ICP备15023666号</u></a> </p><br /><br /></div>
 </body>
 </html>
