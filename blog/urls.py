@@ -21,6 +21,5 @@ from blog.views import index
 urlpatterns = [
     url(r'^$', index, name='home index'),
     url(r'^article/', include('article.urls')),
-    url(r'^(?P<my_args>\d+)/$', 'article.views.detail', name='detail'),
     url(r'^admin/', admin.site.urls),
 ]
