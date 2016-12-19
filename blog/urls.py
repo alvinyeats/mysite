@@ -17,9 +17,10 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 from blog.views import index
+from article.views import home
 
 urlpatterns = [
-    url(r'^$', index, name='home index'),
+    url(r'^$', home),
     url(r'^article/', include('article.urls')),
     url(r'^admin/', admin.site.urls),
 ]
