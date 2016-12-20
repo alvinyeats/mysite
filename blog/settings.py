@@ -120,4 +120,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = '/data/static/'
 
-from settings_local.py import *
+try:
+    from blog.settings_local import *
+except ImportError as e:
+    pass
+
