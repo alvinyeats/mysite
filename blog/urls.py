@@ -16,12 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from article.views import home, detail, archives, about_me
+from . import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', home, name='home'),
-    url(r'^(?P<article_id>[0-9]+)/$', detail, name='detail'),
-    url(r'^archives/$', archives, name='archives'),
-    url(r'^aboutme/$', about_me, name='about_me'),
+    url(r'^$', views.home, name='home'),
+    url(r'^archives/$', views.archives, name='archives'),
+    url(r'^aboutme/$', views.about_me, name='about_me'),
+    url(r'^article/', include('article.urls')),
 ]
