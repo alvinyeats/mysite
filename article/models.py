@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*
+
 from django.db import models
 from django.core.urlresolvers import reverse
 
@@ -15,5 +17,12 @@ class Article(models.Model):
     def __str__(self):
         return self.title
 
-    class Meta:  # 按时间下降排序
+    def save(self, force_insert=False, force_update=False, using=None,
+             update_fields=None):
+        super(Article, self).save()
+        if not self.category:
+            self.category = 'uncategorized'
+            self.save()
+
+    class Meta:  # down sort by date time
         ordering = ['-date_time']
