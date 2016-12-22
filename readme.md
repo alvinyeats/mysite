@@ -49,9 +49,7 @@ python3 get-pip.py
 
 #### pip设置
 
-cd ~
-mkdir .pip
-vim .pip/pip.conf
+vim /etc/pip.conf
 
 ```conf
     [global]
