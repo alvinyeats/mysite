@@ -5,8 +5,8 @@ After=network.target
 [Service]
 User=www
 Group=www
-WorkingDirectory=/home/www/myproject
-ExecStart=/home/www/myproject/myprojectenv/bin/gunicorn --workers 3 --max-requests 10 --user www --group www --log-level debug --error-logfile /var/log/gunicorn/error.log --bind unix:/home/www/myproject/myproject.sock myproject.wsgi:application
+WorkingDirectory=/data/www/mysite
+ExecStart=/data/www/mysiteenv/bin/gunicorn --workers 3 --max-requests 10 --user www --group www --log-level debug --error-logfile /var/log/gunicorn/error.log --bind unix:/data/www/mysite.sock blog.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
