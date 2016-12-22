@@ -57,7 +57,7 @@ def blog_search(request):
 
 class RSSFeed(Feed):
     title = "Alvin's Blog"
-    link = "feeds/posts/"
+    link = "feed"
     description = "RSS feed - blog posts"
 
     def items(self):
