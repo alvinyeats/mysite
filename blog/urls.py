@@ -20,9 +20,11 @@ from . import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^article/', include('article.urls')),
     url(r'^$', views.home, name='home'),
     url(r'^archives/$', views.archives, name='archives'),
+    url(r'^search/$', views.blog_search, name='search'),
     url(r'^aboutme/$', views.about_me, name='about_me'),
+    url(r'^feeds/$', views.RSSFeed(), name="rss"),
     url(r'^tag/(?P<tag>\w+)/$', views.search_tag, name='search_tag'),
-    url(r'^article/', include('article.urls')),
 ]
