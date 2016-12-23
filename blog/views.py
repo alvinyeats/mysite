@@ -68,6 +68,3 @@ class RSSFeed(Feed):
 
     def item_description(self, item):
         return item.content
-
-    # def item_link(self, item):
-    #     return reverse('news-item', args=[item.pk])
