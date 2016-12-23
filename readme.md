@@ -2,12 +2,11 @@
 
 - System: CentOS 7.0
 - Web framework: Django 1.10.4
-- Basic Language: Python 3.4.5
+- Main Language: Python 3.4.5
 - SQL: PostgreSQL 9.2.18
-- Reverse Proxy: Nginx
-- WSGI HTTP Server: gunicorn
+- Reverse Proxy: Nginx 1.10.2
+- WSGI HTTP Server: gunicorn 19.6.0
 
----
 
 ## User Guide
 
@@ -17,10 +16,10 @@
     git clone git@github.com:alvinyeats/mysite.git
 ```
 
-# Virtualenv Config
+### Virtualenv Config
 
 ```shell
-    yum install python34
+    sudo yum install python34
     virtualenv your_python_env -p python3
     source your_python_env/bin/activate
 
