@@ -1,5 +1,8 @@
 # Welcome to Mysite Project
 
+Hi, welcome to my blog project, you can see my blog by entering 'http://www.wyiren.com' on browse.
+
+
 - System: CentOS 7.0
 - Web framework: Django 1.10.4
 - Main Language: Python 3.4.5
