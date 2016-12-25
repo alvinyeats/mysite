@@ -2,27 +2,13 @@
 
 {% load custom_markdown %}
 {% block content %}
-<div class="posts">
-    <!-- Section: articles -->
-    <section id="articles" class="home-section bg-gray">
-        <div class="heading-about marginbot-50">
-            <div class="container">
-            <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                {% for post in post_list %}
-                <div class="section-heading">
-                    <h2><a href="{% url 'detail' article_id=post.id %}">{{ post.title }}</a></h2>
-                    <p>
-                        Time:  <a href="#">{{ post.date_time |date:'Y /m /d'}}</a>
-                        <a href="{% url 'search_tag' tag=post.category %}">{{ post.category|title }}</a>
-                    </p>
-                </div>
-                {% endfor %}
-            </div>
-            </div>
-            </div>
-        </div>
-    </section>
-
-</div><!-- /.blog-post -->
+{% for post in post_list %}
+<div class="section-heading">
+    <h2><a href="{% url 'detail' article_id=post.id %}">{{ post.title }}</a></h2>
+    <p>
+        Time:  <a href="#">{{ post.date_time |date:'Y /m /d'}}</a>
+        <a href="{% url 'search_tag' tag=post.category %}">{{ post.category|title }}</a>
+    </p>
+</div>
+{% endfor %}
 {% endblock %}
