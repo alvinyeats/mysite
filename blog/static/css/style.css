@@ -87,10 +87,18 @@ hr {
     z-index:120;
 }
 
+.section-heading h1 {
+	font-size: 28px;
+}
 
 .section-heading h2 {
 	font-size: 24px;
 }
+
+.section-heading h3 {
+	font-size: 22px;
+}
+
 .section-heading i {
 	margin-bottom: 20px;
 }
