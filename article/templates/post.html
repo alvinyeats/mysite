@@ -2,16 +2,12 @@
 {% load custom_markdown %}
 
 {% block content %}
-
-    <div class="section-heading">
+    <div class="section-heading marginbot-20">
         <h2><a href="{% url 'detail' article_id=post.id %}">{{ post.title }}</a></h2>
         <p>
             Time:  <a href="#">{{ post.date_time |date:'Y /m /d'}}</a>
             <a href="{% url 'search_tag' tag=post.category %}">{{ post.category|title }}</a>
         </p>
-    </div>
-
-    <div class="post-description">
         <p>
             {{ post.content|custom_markdown }}
         </p>

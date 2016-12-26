@@ -6,21 +6,18 @@
 {% block content %}
 
 {% for post in post_list %}
-    <div class="section-heading">
+    <div class="section-heading marginbot-20">
         <h2><a href="{% url 'detail' article_id=post.id %}">{{ post.title }}</a></h2>
         <p>
             Time:  <a href="#">{{ post.date_time |date:'Y /m /d'}}</a>
             <a href="{% url 'search_tag' tag=post.category %}">{{ post.category|title }}</a>
         </p>
-    </div>
 
-    <div>
         <p>
             {{ post.content|custom_markdown|truncatewords_html:50 }}
         </p>
         <a class="button" href="{% url 'detail' article_id=post.id %}">Read More >>> </a>
     </div>
-
 {% endfor %}
 
 {% endblock %}
