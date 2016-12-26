@@ -262,8 +262,6 @@ hr {
 }
 
 input.gn-search {
-        height: 30px;
-        text-align: right;
 		position: relative;
 		z-index: 10;
 		padding-left: 60px;
@@ -271,7 +269,7 @@ input.gn-search {
 		border: none;
 		background: transparent;
 		color: #eb5d1e;
-		font-weight: 300;
+                font-weight: 300;
 		font-family: 'Lato', Arial, sans-serif;
 		cursor: pointer;
 }
