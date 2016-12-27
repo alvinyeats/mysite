@@ -7,7 +7,7 @@ body {
     height: 100%;
     font-family: 'Lato',sans-serif;
 	font-weight: 300;
-    color: #666;
+    color: #333;
     background-color: #fff;
 }
 
@@ -47,8 +47,8 @@ a {
 
 a:hover,
 a:focus {
-    text-decoration: none;
-    color: #176e61;
+    text-decoration: underline;
+    color: #4078c0;
 }
 
 .light {
@@ -86,22 +86,37 @@ hr {
     z-index:120;
 }
 
-.section-heading h1 {
-	font-size: 28px;
+.post-title a {
+    color: #333;
+	font-size: 30px;
+	text-decoration: none;
 }
 
 .section-heading h2 {
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .section-heading h3 {
-	font-size: 22px;
+	font-size: 18px;
+}
+
+.section-heading ul {
+    font-size: 16px;
+	line-height: 1.6em;
+}
+
+.section-heading ol {
+    font-size: 16px;
+	line-height: 1.6em;
 }
 
 .section-heading i {
 	margin-bottom: 20px;
 }
 
+a.read-more {
+    text-decoration: none;
+}
 
 /* --- section bg var --- */
 
@@ -141,7 +156,7 @@ hr {
 		margin: 0;
 		padding: 0;
 		background: #fff;
-		color: #eb5d1e;
+		color: #000033;
 		list-style: none;
 		text-transform: none;
 		font-weight: 300;
@@ -162,7 +177,7 @@ hr {
 .gn-menu-main a {
 		display: block;
 		height: 100%;
-		color: #eb5d1e;
+		color: #000033;
 		text-decoration: none;
 		cursor: pointer;
 }
@@ -267,8 +282,8 @@ input.gn-search {
 		outline: none;
 		border: none;
 		background: transparent;
-		color: #eb5d1e;
-                font-weight: 300;
+		color: #000033;
+        font-weight: 300;
 		font-family: 'Lato', Arial, sans-serif;
 		cursor: pointer;
 }
@@ -276,19 +291,19 @@ input.gn-search {
 /* placeholder */
 
 .gn-search::-webkit-input-placeholder {
-		color: #eb5d1e
+		color: #000033
 }
 
 .gn-search:-moz-placeholder {
-		color: #eb5d1e
+		color: #000033
 }
 
 .gn-search::-moz-placeholder {
-		color: #eb5d1e
+		color: #000033
 }
 
 .gn-search:-ms-input-placeholder {
-		color: #eb5d1e
+		color: #000033
 }
 
 /* hide placeholder when active in Chrome */
@@ -403,8 +418,8 @@ input.gn-search:focus {
 		vertical-align: -2px;
 		width: 30px;
 		height: 3px;
-		background: #eb5d1e;
-		box-shadow: 0 3px white, 0 -6px #eb5d1e, 0 -9px white, 0 -12px #eb5d1e;
+		background: #000033;
+		box-shadow: 0 3px white, 0 -6px #000033, 0 -9px white, 0 -12px #000033;
 		content: '';
 }
 
@@ -415,8 +430,8 @@ input.gn-search:focus {
 }
 
 .gn-icon-menu.gn-selected::before {
-		background: #eb5d1e;
-		box-shadow: 0 3px white, 0 -6px #eb5d1e, 0 -9px white, 0 -12px #eb5d1e;
+		background: #000033;
+		box-shadow: 0 3px white, 0 -6px #000033, 0 -9px white, 0 -12px #000033;
 }
 
 /* styles for opening menu */
@@ -475,7 +490,7 @@ input.gn-search:focus {
 	color: #fff;
 	line-height: 1.1em;
 	margin-bottom: 20px;
-	 font-size: 30px;
+	font-size: 30px;
 }
 .intro .slogan p {
 	color: #eee;
@@ -592,7 +607,7 @@ input.gn-search:focus {
 
 .service-icon {
 	margin-bottom: 20px;
-}	
+}
 
 
 
@@ -674,15 +689,15 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 	margin:0;
 	padding:0;
 }
-.company-social .social-facebook a{background: #3873ae;}
+.company-social .social-facebook a{color: #2c3e50; background: #fff;}
 .company-social .social-twitter a{background: #62c6f8;}
-.company-social .social-dribble a{background: #d74980;}
+.company-social .social-dribble a{color: #2c3e50; background: #fff;}
 .company-social .social-deviantart a{background: #8da356;}
 .company-social .social-google a{background: #000;}
 .company-social .social-vimeo a{background: #51a6d3;}
-.company-social .social-facebook a:hover{background: #4893ce;}
+.company-social .social-facebook a:hover{color: #4078c0; background: #fff;}
 .company-social .social-twitter a:hover{background: #82e6ff;}
-.company-social .social-dribble a:hover{background: #f769a0;}
+.company-social .social-dribble a:hover{color: #4078c0; background: #fff;}
 .company-social .social-deviantart a:hover{background: #adc376;}
 .company-social .social-google a:hover{background: #333;}
 .company-social .social-vimeo a:hover{background: #71c6f3;}
@@ -700,15 +715,16 @@ footer {
 }
 
 footer p {
-	color: #f8f8f8;
+    font-size: 10px;
+	color: #999999;
 }
 
 footer a {
-	color: #fefefe;
+	color: #999999;
 }
 
 footer a:hover {
-	color: #fff;
+	color: #666666;
 }
 
 /* ===========================
