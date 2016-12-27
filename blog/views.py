@@ -29,8 +29,8 @@ def archives(request):
     return render(request, 'archives.html', {'post_list': post_list, 'error': False})
 
 
-def about_me(request):
-    return render(request, 'about_me.html')
+def about(request):
+    return render(request, 'about.html')
 
 
 def search_tag(request, tag):
