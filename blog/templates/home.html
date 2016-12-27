@@ -14,10 +14,23 @@
         </p>
 
         <p>
-            {{ post.content|custom_markdown|truncatewords_html:50 }}
+            {{ post.content|custom_markdown|truncatewords_html:20 }}
         </p>
         <a class="button" href="{% url 'detail' article_id=post.id %}">Read More >>> </a>
     </div>
 {% endfor %}
+{% if post_list.object_list and post_list.paginator.num_pages > 1 %}
+    <div>
+    <ul class="pager">
+    {% if post_list.has_previous %}
+    <li class="previous"><a href="?page={{ post_list.previous_page_number }}">上一页</a></li>
+    {% endif %}
+
+    {% if post_list.has_next %}
+    <li class="next"><a href="?page={{ post_list.next_page_number }}">下一页</a></li>
+    {% endif %}
+    </ul>
+    </div>
+{% endif %}
 
 {% endblock %}
