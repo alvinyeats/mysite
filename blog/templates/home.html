@@ -9,7 +9,7 @@
     <div class="section-heading marginbot-20">
         <h1 class="home-post-title"><a href="{% url 'detail' article_id=post.id %}">{{ post.title }}</a></h1>
         <p>
-            Time:  <a href="#">{{ post.date_time |date:'Y /m /d'}}</a>
+            {{ post.date_time|date:'M d, Y'}}
             <a href="{% url 'search_tag' tag=post.category %}">{{ post.category|title }}</a>
         </p>
 
