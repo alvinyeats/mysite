@@ -10,7 +10,7 @@ from article.models import Article
 
 def home(request):
     posts = Article.objects.all()  #获取全部的Article对象
-    paginator = Paginator(posts, 2) #每页显示两个
+    paginator = Paginator(posts, 5) #每页显示两个
     page = request.GET.get('page')
     try:
         post_list = paginator.page(page)
