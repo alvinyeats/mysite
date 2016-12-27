@@ -6,11 +6,15 @@
         <h2 class="post-title">没有相关文章题目</h2>
     {% else %}
     {% for post in post_list %}
-        <h1 class="post-title"><a href="{% url 'detail' article_id=post.id %}">{{ post.title }}</a></h1>
-        <p>
-            Time:  <a href="#">{{ post.date_time |date:"Y /m /d"}}</a>
-            <a href="{% url 'search_tag' tag=post.category %}">{{ post.category|title }}</a>
-        </p>
+        <div class="post-item">
+            <div class="post-info">{{ post.date_time |date:'M d, Y'}}</div>
+            <a class="post-title-link" href="{% url 'detail' article_id=post.id %}">{{ post.title }}</a>
+
+        <!--<p>-->
+            <!--Time:  <a href="#">{{ post.date_time |date:"Y /m /d"}}</a>-->
+            <!--<a href="{% url 'search_tag' tag=post.category %}">{{ post.category|title }}</a>-->
+        <!--</p>-->
+        </div>
     {% endfor %}
     {% endif %}
 </div><!-- /.blog-post -->
