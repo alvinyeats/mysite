@@ -86,6 +86,17 @@ hr {
     z-index:120;
 }
 
+.url-bg {
+    color: #333;
+    text-decoration: none;
+}
+
+.url-bg:hover {
+    color: #333;
+    text-decoration: none;
+    background: #eaf1fa;
+}
+
 .post-title a {
     color: #333;
 	font-size: 24px;
@@ -95,6 +106,22 @@ hr {
 .home-post-title a {
     color: #333;
 	font-size: 24px;
+}
+
+.home-post-info {
+    font-size: 13px;
+}
+
+.home-post-header h1 {
+    font-weight: normal;
+}
+
+.home-post-header h2 {
+    font-weight: normal;
+}
+
+.home-post-header h3 {
+    font-weight: normal;
 }
 
 .section-heading h1 {
@@ -127,15 +154,24 @@ a.read-more {
     text-decoration: none;
 }
 
+a.read-more:hover {
+    text-decoration: none;
+    background: #eaf1fa;
+}
+
 .post-item {
     padding: 2px 0px;
     line-height: 1.6;
 }
 
-.post-info {
+.archive-info {
     float: left;
     width: 125px;
     color: #7f8c8d;
+}
+
+.post-info {
+    font-size: 13px;
 }
 
 a.post-title-link {
