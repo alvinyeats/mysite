@@ -14,9 +14,10 @@
         </p>
 
         <p>
-            {{ post.content|custom_markdown|truncatewords_html:20 }}
+            {{ post.content|truncatewords_html:10|custom_markdown}}
+            <a class="read-more" href="{% url 'detail' article_id=post.id %}">显示更多</a>
         </p>
-        <a class="read-more" href="{% url 'detail' article_id=post.id %}">. . . 阅读全文</a>
+
     </div>
 {% endfor %}
 {% if post_list.object_list and post_list.paginator.num_pages > 1 %}
