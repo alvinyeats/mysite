@@ -207,3 +207,9 @@ vim /etc/gitconfig
 - 删除远程分支tag：git push origin -d tag <tagname>
 
 ---
+
+### 数据的导入导出
+
+命令操作：
+数据的导出：pg_dump -U postgres(用户名)  (-t 表名)  数据库名(缺省时同用户名)  > c:\fulldb.sql
+数据的导入：psql -U postgres(用户名)  数据库名(缺省时同用户名) < C:\fulldb.sql

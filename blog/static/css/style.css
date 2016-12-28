@@ -97,12 +97,16 @@ hr {
 	font-size: 24px;
 }
 
+.section-heading h1 {
+	font-size: 16px;
+}
+
 .section-heading h2 {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .section-heading h3 {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .section-heading ul {
