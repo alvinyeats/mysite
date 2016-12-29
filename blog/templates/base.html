@@ -1,103 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Alvin Blog</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Fonts -->
-    <link href="/static/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-	<link href="/static/css/nivo-lightbox.css" rel="stylesheet" />
-	<link href="/static/css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
-	<link href="/static/css/animate.css" rel="stylesheet" />
-    <!-- Squad theme CSS -->
-    <link href="/static/css/style.css" rel="stylesheet">
-	<link href="/static/color/default.css" rel="stylesheet">
-	<link href="/static/github.css" rel="stylesheet">
-
+	<title>Alvin</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/icon/iconfont.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll">
+<body>
+	<div class="container">
+		<ul class="menu">
+			<li class="menu-main">
+				<a class="iconfont icon-menu"></a>
+			</li>
 
-<div class="container">
-	<ul id="gn-menu" class="gn-menu-main">
-		<li class="gn-trigger">
-			<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
-			<nav class="gn-menu-wrapper">
-				<div class="gn-scroller">
-					<ul class="gn-menu">
-						<li class="gn-search-item">
-							<a class="gn-icon gn-icon-search"><span>Search</span></a>
-                            <form action="/search/" method="get">
-                                <input placeholder="Search" type="text" name="s" class="gn-search">
-                            </form>
-						</li>
-						<li>
-							<a href="/about/" class="gn-icon gn-icon-help">About</a>
-						</li>
-						<li>
-							<a href="/archives/" class="gn-icon gn-icon-archive">Archive</a>
-						</li>
-					</ul>
-				</div><!-- /gn-scroller -->
-			</nav>
-		</li>
-		<li><a href="/">Home</a></li>
-		<li>
-			<ul class="company-social">
-                <li class="social-dribble">
-					<a href="https://github.com/alvinyeats" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-				</li>
-				<li class="social-facebook"><a href="/feed/" target="_blank"><i class="fa fa-rss fa-2x"></i></a></li>
-			</ul>
-		</li>
-	</ul>
-</div>
-
-	<!-- Section: articles -->
-	<section id="articles" class="home-section bg-gray">
-		<div class="heading-about">
-			<div class="container">
-			<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-			{% block content %}
-			{% endblock %}
-			</div>
-			</div>
-			</div>
-		</div>
+			<li class="menu-social">
+				<ul>
+					<li>
+						<a href="#">
+							<i class="iconfont icon-rss icon-2x" style="font-size: 1.5em;"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="iconfont icon-github icon-2x" style="font-size: 1.5em;"></i>
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<section class="home-section">main
 	</section>
-	<!-- /Section: articles -->
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-12">
-					<p>Copyright &copy; 2015 Alvin <a href="http://www.miitbeian.gov.cn">豫ICP备15023666号</a></p>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-    <!-- Core JavaScript Files -->
-    <script src="/static/js/jquery.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/jquery.easing.min.js"></script>
-	<script src="/static/js/classie.js"></script>
-	<script src="/static/js/gnmenu.js"></script>
-	<script src="/static/js/jquery.scrollTo.js"></script>
-	<script src="/static/js/nivo-lightbox.min.js"></script>
-	<script src="/static/js/stellar.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="/static/js/custom.js"></script>
-
+	<footer>footer</footer>
 </body>
 
 </html>
+
