@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alvin</title>
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<link href="css/icon/iconfont.css" rel="stylesheet">
+	<link href="/static/css/style.css" rel="stylesheet" type="text/css">
+	<link href="/static/css/icon/iconfont.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,8 +32,12 @@
 			</li>
 		</ul>
 	</div>
+
 	<section class="home-section">main
+	{% block content %}
+  {% endblock %}
 	</section>
+
 	<footer>footer</footer>
 </body>
 
