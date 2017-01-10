@@ -68,3 +68,7 @@ class RSSFeed(Feed):
 
     def item_description(self, item):
         return item.content
+
+
+def handler404(request):
+    return render(request, '404.html')
